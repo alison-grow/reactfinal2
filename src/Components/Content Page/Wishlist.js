@@ -25,7 +25,11 @@ export default function Wishlist({ addToCart, toggleWishlist }) {
 	}
 	return (
 		<main>
-			<h2>Wishlist</h2>
+			<h2>
+			<img src="https://dl.glitter-graphics.com/pub/3200/3200321c82crvf9ss.gif" alt="heart gif" className="main-h2-gif" />
+				Your Wishlist
+				<img src="https://dl.glitter-graphics.com/pub/3200/3200321c82crvf9ss.gif" alt="heart gif" className="main-h2-gif" />
+			</h2>
 			{wishlist}
 		</main>
 	);

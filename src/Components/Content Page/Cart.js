@@ -29,15 +29,19 @@ export default function Cart({
 					);
 				})}
 				<div className="cart-items-total">
-					<div>Total: {totalPrice}$</div>
-					<button onClick={clearCart}>Proceed to Checkout</button>
+					<div>Total: ${totalPrice}</div>
+					<button className="proceed-btn" onClick={clearCart}>Proceed to Checkout</button>
 				</div>
 			</div>
 		);
 	}
 	return (
 		<main>
-			<h2>Check Out</h2>
+			<h2>
+			<img src="https://dl.glitter-graphics.com/pub/3365/3365183h29y7c86k4.gif" alt="shopping cart gif" className="main-h2-gif" />
+				Shopping Cart
+			<img src="https://dl.glitter-graphics.com/pub/3365/3365183h29y7c86k4.gif" alt="shopping cart gif" className="main-h2-gif" />
+			</h2>
 			{cart}
 		</main>
 	);

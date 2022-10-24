@@ -1,21 +1,37 @@
+@font-face {
+	font-family: curly;
+	src: url('/src/font/JandaCurlygirlChunky.ttf');
+}
 .card {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	background-color: white;
+	background-color: #DFABC5;
 	width: 17rem;
-	height: 24rem;
-	border: solid 2px transparent;
-	border-radius: 10px;
+	height: 25rem;
+	border-radius: 20px;
+	border: 8px solid #9C4D75;
+}
+.card:hover {
+	box-shadow: 5px 10px #68334D;
 }
 .card-upper * {
 	padding: 1rem;
+	font-family: 'curly', cursive;
+	color: #68334D;
+	text-align: center;
+	font-size: 18px;
 }
+/* .card-upper *:hover {
+	color: #DFABC5;
+} */
 .card-image {
 	text-align: center;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
-	border-bottom: solid 1px black;
+	border-bottom: solid 2px #9C4D75;
+	background-color: white;
+	border-radius: 15px;
 }
 .card-image img {
 	width: 7.8rem;
@@ -23,6 +39,11 @@
 }
 .card-lower {
 	padding: 0rem 1rem 1rem 1rem;
+	font-family: 'curly', cursive;
+	color: #68334D;
+	text-align: center;
+	margin-top: -10px;
+	margin-bottom: 0px;
 }
 .card-button-container {
 	display: flex;
@@ -32,18 +53,29 @@
 
 .card-add-to-cart-btn {
 	flex: 1;
+	height: 50px;
+	background-color: #9C4D75;
+	border: solid black 1px;
+	color: #DFABC5;
+	margin-top: -5px;
+	font-family: 'bratz', cursive;
+}
+.card-add-to-cart-btn:hover {
+	background-color: white;
+	color: #9C4D75;
 }
 .card-toggle-wishlist-btn {
 	padding: 0;
-	width: 2rem;
+	width: 2.2rem;
 	border-radius: 50%;
+	border: 1px solid black;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background-color: #9C4D75;
 }
-
-.card:hover {
-	border: solid 2px black;
+.card-toggle-wishlist-btn:hover {
+	background-color: #DFABC5;
 }
 
 @media (max-width: 750px) {

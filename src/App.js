@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Main from "./components/Main";
+import Main from "./Components/Main";
 
 export const allItemsContext = React.createContext(null);
 export const cartItemsContext = React.createContext(null);
@@ -11,13 +11,13 @@ export default function App() {
 	const [wishlist, setWishlist] = useState([]);
 	const [cartItems, setCartItems] = useState([]);
 	const allItems = { menItems, womenItems, jewelryItems, wishlist, cartItems };
-	// fetch data on mount
+	
 	useEffect(() => {
 		fetchMenItems();
 		fetchWomenItems();
 		fetchJewelryItems();
 	}, []);
-	// update wishlist based on men and women items updates
+	// update wishlist
 	useEffect(() => {
 		const menWishlist = menItems.filter((item) => item.inWishlist);
 		const womenWishlist = womenItems.filter((item) => item.inWishlist);

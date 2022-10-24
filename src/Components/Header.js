@@ -9,7 +9,7 @@ export default function Header() {
 	return (
 		<header>
 			<div className="upper-nav">
-				<div className="logo">dev:store</div>
+				<div className="logo">forever 24</div>
 				<div className="upper-nav-links">
 					<Link to="/">
 						<MdHome /> Home
@@ -23,8 +23,9 @@ export default function Header() {
 				</div>
 			</div>
 			<nav className="lower-nav">
-				<Link to="/men">Men</Link>
-				<Link to="/women">Women</Link>
+				<Link to="/men">Men's</Link>
+				<Link to="/women">Women's</Link>
+				<Link to="/jewelry">Jewelry</Link>
 			</nav>
 		</header>
 	);

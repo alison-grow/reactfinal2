@@ -1,3 +1,11 @@
+@font-face {
+	font-family: bratz;
+	src: url('../font/HouseOfFun-LVL4.ttf');
+}
+@font-face {
+	font-family: curly;
+	src: url('../font/JandaCurlygirlChunky.ttf');
+}
 :root {
 	font-family: "Inconsolata", monospace;
 	font-size: 19px;
@@ -9,7 +17,7 @@ body {
 	padding: 0;
 }
 body {
-	background-color: #943434;
+	background-image: url('https://dl.glitter-graphics.com/pub/1639/1639186ckukxjuuwf.gif');
 }
 header {
 	display: flex;
@@ -22,11 +30,14 @@ header {
 	margin-left: 2rem;
 }
 .upper-nav {
-	color: #943434;
+	color: #9C4D75;
+	background-color: black;
 	display: flex;
+	height: 70px;
 	justify-content: space-between;
 	align-items: center;
 	padding: 0.5rem;
+	font-family: 'bratz', cursive;
 }
 .upper-nav-links {
 	display: flex;
@@ -35,21 +46,24 @@ header {
 	margin-right: 1rem;
 }
 .upper-nav-links * {
-	color: #943434;
+	color: #9C4D75;
 	margin-left: 1rem;
 	text-decoration: none;
+	font-family: 'curly', cursive;
 }
 .lower-nav {
-	background-color: #570101;
-	color: white;
+	background-color: #9C4D75;
+	color: black;
+	height: 50px;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
 	text-align: center;
 }
 .lower-nav * {
-	color: white;
+	color: black;
 	padding: 0.4rem;
 	text-decoration: none;
+	font-family: 'curly', cursive;
 }
 a {
 	display: flex;
@@ -59,7 +73,7 @@ a {
 	text-decoration: none;
 }
 a:hover {
-	text-decoration: underline;
+	color: #DFABC5;
 }
 main {
 	display: flex;
@@ -67,15 +81,26 @@ main {
 	justify-content: center;
 	align-items: center;
 }
-main h2,
 main h4,
 main p {
 	color: white;
 }
+main h2 {
+	font-size: 50px;
+	border: 5px solid ;
+	border-radius: 30px;
+	color: #9C4D75;
+	background-color: #DFABC5;
+	font-family: 'bratz', cursive;
+}
+main h2 img {
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
 button {
-	font-family: "Inconsolata", monospace;
+	font-family: 'bratz', cursive;
 	font-size: 1rem;
-	border: none;
 	text-align: center;
 	vertical-align: bottom;
 	border-radius: 50px;
@@ -92,7 +117,6 @@ button:active {
 	margin: 2rem;
 }
 .cart-items-container {
-	background-color: white;
 	margin: 2rem;
 	border-radius: 10px;
 }
@@ -102,8 +126,21 @@ button:active {
 	flex-direction: column;
 	align-items: flex-end;
 	gap: 1rem;
+	background-color: #DFABC5;
+	border: 8px solid #9C4D75;
+	border-radius: 15px;
 }
-
+.proceed-btn {
+	background-color: #9C4D75;
+	color: #DFABC5;
+}
+.proceed-btn:hover {
+	background-color: white;
+	color: #9C4D75;
+}
+.main-h2-gif {
+	height: 60px;
+}
 @media (max-width: 750px) {
 	:root {
 		font-size: 17px;

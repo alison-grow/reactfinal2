@@ -1,10 +1,12 @@
 import React from "react";
-import Cart from "./content page/Cart";
-import Men from "./content page/Men";
-import Wishlist from "./content page/Wishlist";
-import Women from "./content page/Women";
-import Home from "./content page/Home";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import './App.css';
+import Cart from "./Content Page/Cart";
+import Men from "./Content Page/Men";
+import Wishlist from "./Content Page/Wishlist";
+import Women from "./Content Page/Women";
+import Jewelry from "./Content Page/Jewelry"
+import Home from "./Content Page/Home";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Header from "./Header";
 
 export default function Main({
@@ -18,7 +20,7 @@ export default function Main({
 	console.log("main");
 	return (
 		<>
-			<BrowserRouter basename="/shopping-cart/">
+			<HashRouter>
 				<Routes>
 					<Route
 						path="/"
@@ -30,7 +32,7 @@ export default function Main({
 						}
 					/>
 					<Route
-						path="/men"
+						path="/Men"
 						element={
 							<>
 								<Header />
@@ -42,11 +44,23 @@ export default function Main({
 						}
 					/>
 					<Route
-						path="/women"
+						path="/Women"
 						element={
 							<>
 								<Header />
 								<Women
+									addToCart={addToCart}
+									toggleWishlist={toggleWishlist}
+								/>
+							</>
+						}
+					/>
+					<Route
+						path="/Jewelry"
+						element={
+							<>
+								<Header />
+								<Jewelry
 									addToCart={addToCart}
 									toggleWishlist={toggleWishlist}
 								/>
@@ -80,7 +94,7 @@ export default function Main({
 						}
 					/>
 				</Routes>
-			</BrowserRouter>
+			</HashRouter>
 		</>
 	);
 }

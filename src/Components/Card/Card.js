@@ -17,7 +17,7 @@ export default function Card({ item, addToCart, toggleWishlist }) {
 				<div>{item.title}</div>
 			</div>
 			<div className="card-lower">
-				<div>Price: {item.price}$</div>
+				<div>${item.price}</div>
 				<div className="card-button-container">
 					<button
 						className="card-add-to-cart-btn"
