@@ -9,7 +9,10 @@ export default function Header() {
 	return (
 		<header>
 			<div className="upper-nav">
-				<div className="logo">forever 24</div>
+				<div className="logo">
+					forever 24
+					<img src="https://dl.glitter-graphics.com/pub/3200/3200321c82crvf9ss.gif" alt="butterfly" className="header-logo-gif" />
+					</div>
 				<div className="upper-nav-links">
 					<Link to="/">
 						<MdHome /> Home

@@ -1,5 +1,6 @@
 import React from "react";
 import { MdFavoriteBorder, MdFavorite } from "react-icons/md";
+import { IconContext } from "react-icons";
 import "./Card.css";
 
 export default function Card({ item, addToCart, toggleWishlist }) {
@@ -35,4 +36,4 @@ export default function Card({ item, addToCart, toggleWishlist }) {
 			</div>
 		</div>
 	);
-}
+};

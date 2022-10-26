@@ -73,9 +73,13 @@
 	align-items: center;
 	justify-content: center;
 	background-color: #9C4D75;
+	color: black;
 }
 .card-toggle-wishlist-btn:hover {
 	background-color: #DFABC5;
+}
+.card-toggle-wishlist-btn icon {
+	color: black;
 }
 
 @media (max-width: 750px) {

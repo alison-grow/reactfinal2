@@ -29,6 +29,9 @@ export default function Cart({
 					);
 				})}
 				<div className="cart-items-total">
+					<div>
+						<img src="http://img41.glitterfy.com/22299/glitterfy2052226342B81.gif" alt="shopping is the best medicine!" className="glitter-shopping-gif" />
+					</div>
 					<div>Total: ${totalPrice}</div>
 					<button className="proceed-btn" onClick={clearCart}>Proceed to Checkout</button>
 				</div>

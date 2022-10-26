@@ -24,6 +24,9 @@ export default function Men({ addToCart, toggleWishlist }) {
 					);
 				})}
 			</div>
+			<div>
+				<img src="https://dl.glitter-graphics.com/pub/459/459678zahqqkeudq.gif" alt="glitter butterfly" className="img-below-cards" />
+			</div> 
 		</main>
 	);
 }

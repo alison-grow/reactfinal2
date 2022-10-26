@@ -16,10 +16,13 @@ export default function ImageSlider() {
 	const shopBtn = (
 		<>
 			<Link to="/men">
-				<button>Shop Men</button>
+				<button className="slider-shop-btn">Shop Men</button>
 			</Link>
 			<Link to="/women">
-				<button>Shop Women</button>
+				<button className="slider-shop-btn">Shop Women</button>
+			</Link>
+			<Link to="/jewelry">
+				<button className="slider-shop-btn">Shop Jewelry</button>
 			</Link>
 		</>
 	);

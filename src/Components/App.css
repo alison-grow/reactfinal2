@@ -1,3 +1,4 @@
+/* FONTS */
 @font-face {
 	font-family: bratz;
 	src: url('../font/HouseOfFun-LVL4.ttf');
@@ -6,6 +7,8 @@
 	font-family: curly;
 	src: url('../font/JandaCurlygirlChunky.ttf');
 }
+
+/* BODY CSS */
 :root {
 	font-family: "Inconsolata", monospace;
 	font-size: 19px;
@@ -18,6 +21,7 @@ body {
 }
 body {
 	background-image: url('https://dl.glitter-graphics.com/pub/1639/1639186ckukxjuuwf.gif');
+	cursor: url('https://cur.cursors-4u.net/symbols/sym-7/sym629.ani'), url('https://cur.cursors-4u.net/symbols/sym-7/sym629.png'), auto !important;
 }
 header {
 	display: flex;
@@ -28,6 +32,12 @@ header {
 	font-size: 1.5rem;
 	font-weight: bold;
 	margin-left: 2rem;
+	word-spacing: -15px;
+}
+.header-logo-gif {
+	height: 30px;
+	margin-left: 10px;
+	margin-top: 5px;
 }
 .upper-nav {
 	color: #9C4D75;
@@ -92,6 +102,7 @@ main h2 {
 	color: #9C4D75;
 	background-color: #DFABC5;
 	font-family: 'bratz', cursive;
+	word-spacing: -15px;
 }
 main h2 img {
 	margin-top: 20px;
@@ -141,6 +152,22 @@ button:active {
 .main-h2-gif {
 	height: 60px;
 }
+.welcome-banner {
+	height: 100px;
+}
+.img-below-cards {
+	margin-bottom: 30px;
+}
+::selection {
+	background: #BC5E8D; /* WebKit/Blink Browsers */
+	COLOR: #ffb7b7;
+}
+::-moz-selection {
+	background: #BC5E8D;/* Gecko Browsers */
+	color: #ffb7b7;
+}
+
+/* MEDIA QUERIES */
 @media (max-width: 750px) {
 	:root {
 		font-size: 17px;
