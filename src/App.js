@@ -66,7 +66,7 @@ export default function App() {
 	};
 
 	const clearCart = () => {
-		alert("Thank you for shopping at myFakeShop. Enjoy your new styles!");
+		alert("Thank you for shopping at Forever 24!");
 		setCartItems([]);
 	};
 

@@ -132,6 +132,7 @@ button:active {
 .cart-items-container {
 	margin: 2rem;
 	border-radius: 10px;
+	font-family: 'curly', cursive;
 }
 .cart-items-total {
 	padding: 1rem;

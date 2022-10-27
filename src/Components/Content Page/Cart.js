@@ -31,10 +31,13 @@ export default function Cart({
 				})}
 				<div className="cart-items-total">
 					<div>Total: ${totalPrice}</div>
-					<Link to="/checkout">
+					{/* <Link to="/payment">
 						<button className="proceed-btn" >
 							Proceed to Checkout
 						</button>
+					</Link> */}
+					<Link to="/payment">
+						<button className="proceed-btn">Proceed to Checkout</button>
 					</Link>
 				</div>
 			</div>
@@ -47,6 +50,7 @@ export default function Cart({
 				Shopping Cart
 			<img src="https://dl.glitter-graphics.com/pub/3365/3365183h29y7c86k4.gif" alt="shopping cart gif" className="main-h2-gif" />
 			</h2>
+			<img src="https://cur.glitter-graphics.net/pub/3587/3587556ld2n4khvoz.gif" alt="divider" />
 			{cart}
 			<div>
 				<img src="http://img41.glitterfy.com/22299/glitterfy2052226342B81.gif" alt="shopping is the best medicine!" className="img-below-cards" />

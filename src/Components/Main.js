@@ -1,6 +1,7 @@
 import React from "react";
 import './App.css';
 import Cart from "./Content Page/Cart";
+import Checkout from "./Content Page/Payment";
 import Men from "./Content Page/Men";
 import Wishlist from "./Content Page/Wishlist";
 import Women from "./Content Page/Women";
@@ -89,6 +90,16 @@ export default function Main({
 								<Wishlist
 									addToCart={addToCart}
 									toggleWishlist={toggleWishlist}
+								/>
+							</>
+						}
+					/>
+					<Route
+						path="/payment"
+						element={
+							<>
+								<Header />
+								<Checkout
 								/>
 							</>
 						}
