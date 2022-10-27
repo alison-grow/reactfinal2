@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 import { allItemsContext } from "../../App";
 import CartItems from "../Cart Items/CartItems";
 
@@ -12,7 +13,7 @@ export default function Cart({
 
 	let cart;
 	if (cartItems.length === 0) {
-		cart = <h4>Your Cart is Empty.</h4>;
+		cart = <h4>Your Cart is Empty!</h4>;
 	} else {
 		const totalPrice = getTotal(cartItems);
 		cart = (
@@ -29,11 +30,12 @@ export default function Cart({
 					);
 				})}
 				<div className="cart-items-total">
-					<div>
-						<img src="http://img41.glitterfy.com/22299/glitterfy2052226342B81.gif" alt="shopping is the best medicine!" className="glitter-shopping-gif" />
-					</div>
 					<div>Total: ${totalPrice}</div>
-					<button className="proceed-btn" onClick={clearCart}>Proceed to Checkout</button>
+					<Link to="/checkout">
+						<button className="proceed-btn" >
+							Proceed to Checkout
+						</button>
+					</Link>
 				</div>
 			</div>
 		);
@@ -46,6 +48,9 @@ export default function Cart({
 			<img src="https://dl.glitter-graphics.com/pub/3365/3365183h29y7c86k4.gif" alt="shopping cart gif" className="main-h2-gif" />
 			</h2>
 			{cart}
+			<div>
+				<img src="http://img41.glitterfy.com/22299/glitterfy2052226342B81.gif" alt="shopping is the best medicine!" className="img-below-cards" />
+			</div>
 		</main>
 	);
 }

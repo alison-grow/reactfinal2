@@ -6,7 +6,7 @@ export default function Wishlist({ addToCart, toggleWishlist }) {
 	const wishlistItems = useContext(allItemsContext).wishlist;
 	let wishlist;
 	if (wishlistItems.length === 0) {
-		wishlist = <h4>Your Wishlist Is Empty.</h4>;
+		wishlist = <h4>Your Wishlist Is Empty!</h4>;
 	} else {
 		wishlist = (
 			<div className="card-container">
