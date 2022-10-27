@@ -10,7 +10,7 @@
 	max-height: 500px;
 	max-width: 90vw;
 	border-radius: 20px;
-	border: 15px solid #68334D;
+	border: 10px solid #9C4D75;
 }
 
 .slider-text {
@@ -22,10 +22,12 @@
 	padding: 3rem;
 }
 .slider-text p {
-	margin: 2rem;
+	margin: 1rem;
 	color: #E9DDE3;
 	font-family: 'curly', cursive;
-	text-shadow: 2px 2px black;
+	/* text-shadow: 2px 2px black; */
+	text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+	font-size: 40px;
 }
 .slider-btn {
 	display: flex;
