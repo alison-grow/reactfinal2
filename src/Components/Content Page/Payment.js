@@ -1,9 +1,13 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import totalPrice from "./Cart";
+import CartItems from "../Cart Items/CartItems";
 
 
 export default function Checkout() {
     const { register, handleSubmit } = useForm();
+    // const totalPrice = getTotal(cartItems);
+    // const cartItems = useContext(allItemsContext).cartItems;
     const onSubmit = (data) => {
 
     }
@@ -16,6 +20,7 @@ export default function Checkout() {
             </h2>
             <img src="https://i3.glitter-graphics.org/pub/1154/1154233vwjnnz8zai.gif" alt="divider" />
             <div className="checkout-container">
+            <div className="cart-total">Your Total: ${totalPrice}</div>
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div>
                         <label htmlFor="firstName">First Name:</label><br></br>
@@ -44,14 +49,16 @@ export default function Checkout() {
                         <input className="checkout-container-input" type="text" placeholder="Card Number" {...register} /><br></br><br></br>
                     </div>
                     <input className="submit-btn" type="submit" />
-                    {/* <Link to="">
-                        <button>
-                            Submit!
-                        </button>
-                    </Link> */}
                 </form>
             </div>
             <img src="https://dl.glitter-graphics.com/pub/459/459678zahqqkeudq.gif" alt="glitter butterfly" className="img-below-cards" />
         </main>
     );
 }
+
+// function getTotal(items) {
+// 	const total = items.reduce((sum, item) => {
+// 		return (sum += item.quantity * item.info.price);
+// 	}, 0);
+// 	return total.toFixed(2);
+// }

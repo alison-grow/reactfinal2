@@ -25,7 +25,6 @@
 	margin: 1rem;
 	color: #E9DDE3;
 	font-family: 'curly', cursive;
-	/* text-shadow: 2px 2px black; */
 	text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
 	font-size: 40px;
 }
@@ -48,7 +47,6 @@
 	right: 0.7rem;
 	font-size: 2rem;
 	color: #9C4D75;
-	cursor: pointer;
 	z-index: 10;
 	user-select: none;
 }
@@ -58,7 +56,6 @@
 	left: 0.7rem;
 	font-size: 2rem;
 	color: #9C4D75;
-	cursor: pointer;
 	z-index: 10;
 	user-select: none;
 }

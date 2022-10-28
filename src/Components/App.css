@@ -10,7 +10,6 @@
 
 /* BODY CSS */
 :root {
-	font-family: "Inconsolata", monospace;
 	font-size: 19px;
 	box-sizing: border-box;
 }
@@ -21,7 +20,7 @@ body {
 }
 body {
 	background-image: url('https://dl.glitter-graphics.com/pub/1639/1639186ckukxjuuwf.gif');
-	cursor: url('https://cur.cursors-4u.net/symbols/sym-7/sym629.ani'), url('https://cur.cursors-4u.net/symbols/sym-7/sym629.png'), auto !important;
+	cursor: url('https://cur.cursors-4u.net/cursors/cur-3/cur242.ani'), url('https://cur.cursors-4u.net/cursors/cur-3/cur242.png'), auto !important;
 }
 header {
 	display: flex;
@@ -81,6 +80,7 @@ a {
 	align-items: center;
 	gap: 2px;
 	text-decoration: none;
+	cursor: url('https://cur.cursors-4u.net/cursors/cur-3/cur242.ani'), url('https://cur.cursors-4u.net/cursors/cur-3/cur242.png'), auto !important;
 }
 a:hover {
 	color: #DFABC5;
@@ -96,6 +96,7 @@ main p {
 	color: white;
 	font-family: 'curly', cursive;
 	font-size: 50px;
+	text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
 }
 main h2 {
 	font-size: 50px;
@@ -119,6 +120,7 @@ button {
 	border-radius: 50px;
 	padding: 0.5rem 1rem;
 	color: black;
+	cursor: url('https://cur.cursors-4u.net/cursors/cur-3/cur242.ani'), url('https://cur.cursors-4u.net/cursors/cur-3/cur242.png'), auto !important;
 }
 button:active {
 	transform: scale(0.95);
@@ -144,6 +146,11 @@ button:active {
 	border: 8px solid #9C4D75;
 	border-radius: 15px;
 }
+.cart-total {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 40px;
+}
 .checkout-container {
 	background-color: #DFABC5;
 	border: 8px solid #9C4D75;
@@ -157,12 +164,16 @@ button:active {
 	font-size: 25px;
 	color: #68334D;
 }
+.checkout-container label {
+	cursor: url('https://cur.cursors-4u.net/cursors/cur-3/cur242.ani'), url('https://cur.cursors-4u.net/cursors/cur-3/cur242.png'), auto !important;
+}
 .checkout-container-input {
 	border: 2px solid #9C4D75;
 	width: 400px;
 	height: 30px;
 	border-radius: 20px;
 	margin-bottom: 5px;
+	cursor: url('https://cur.cursors-4u.net/cursors/cur-3/cur242.ani'), url('https://cur.cursors-4u.net/cursors/cur-3/cur242.png'), auto !important;
 }
 .submit-btn {
 	background-color: #9C4D75;
@@ -173,6 +184,7 @@ button:active {
 	border-radius: 50px;
 	font-family: 'bratz', cursive;
 	font-size: 1rem;
+	cursor: url('https://cur.cursors-4u.net/cursors/cur-3/cur242.ani'), url('https://cur.cursors-4u.net/cursors/cur-3/cur242.png'), auto !important;
 }
 .submit-btn:hover {
 	background-color: white;
@@ -186,11 +198,20 @@ button:active {
 	background-color: white;
 	color: #9C4D75;
 }
+.product-details-container {
+	background-color: #DFABC5;
+	border: 5px solid #9C4D75;
+	border-radius: 25px;
+	font-family: 'curly', cursive;
+	height: 500px;
+	width: 50%;
+	color: #68334D;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
 .main-h2-gif {
 	height: 60px;
-}
-.welcome-banner {
-	height: 100px;
 }
 .img-below-cards {
 	margin-bottom: 30px;
@@ -202,33 +223,4 @@ button:active {
 ::-moz-selection {
 	background: #BC5E8D;/* Gecko Browsers */
 	color: #ffb7b7;
-}
-
-/* MEDIA QUERIES */
-@media (max-width: 750px) {
-	:root {
-		font-size: 17px;
-	}
-}
-
-@media (max-width: 550px) {
-	:root {
-		font-size: 15px;
-	}
-	button {
-		font-size: 0.8rem;
-	}
-	.card-container {
-		gap: 1rem;
-	}
-	.cart-items-container {
-		margin: 1rem;
-	}
-	.upper-nav {
-		flex-direction: column;
-		gap: 1rem;
-	}
-	.logo {
-		margin: 0;
-	}
 }

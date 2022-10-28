@@ -31,11 +31,6 @@ export default function Cart({
 				})}
 				<div className="cart-items-total">
 					<div>Total: ${totalPrice}</div>
-					{/* <Link to="/payment">
-						<button className="proceed-btn" >
-							Proceed to Checkout
-						</button>
-					</Link> */}
 					<Link to="/payment">
 						<button className="proceed-btn">Proceed to Checkout</button>
 					</Link>
