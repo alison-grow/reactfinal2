@@ -144,13 +144,39 @@ button:active {
 	border: 8px solid #9C4D75;
 	border-radius: 15px;
 }
-/* .divider {
-	margin-top: -50px;
-} */
 .checkout-container {
 	background-color: #DFABC5;
 	border: 8px solid #9C4D75;
-	border-radius: 15px;
+	border-radius: 40px;
+	padding: 20px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+	width: 40%;
+	font-family: 'curly', cursive;
+	font-size: 25px;
+	color: #68334D;
+}
+.checkout-container-input {
+	border: 2px solid #9C4D75;
+	width: 400px;
+	height: 30px;
+	border-radius: 20px;
+	margin-bottom: 5px;
+}
+.submit-btn {
+	background-color: #9C4D75;
+	color: #DFABC5;
+	border: 2px solid black;
+	width: 200px;
+	height: 60px;
+	border-radius: 50px;
+	font-family: 'bratz', cursive;
+	font-size: 1rem;
+}
+.submit-btn:hover {
+	background-color: white;
+	color: #9C4D75;
 }
 .proceed-btn {
 	background-color: #9C4D75;

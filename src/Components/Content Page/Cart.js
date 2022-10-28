@@ -50,10 +50,10 @@ export default function Cart({
 				Shopping Cart
 			<img src="https://dl.glitter-graphics.com/pub/3365/3365183h29y7c86k4.gif" alt="shopping cart gif" className="main-h2-gif" />
 			</h2>
-			<img src="https://cur.glitter-graphics.net/pub/3587/3587556ld2n4khvoz.gif" alt="divider" />
+			<img src="https://i3.glitter-graphics.org/pub/1154/1154233vwjnnz8zai.gif" alt="divider" />
 			{cart}
 			<div>
-				<img src="http://img41.glitterfy.com/22299/glitterfy2052226342B81.gif" alt="shopping is the best medicine!" className="img-below-cards" />
+			<img src="https://dl.glitter-graphics.com/pub/459/459678zahqqkeudq.gif" alt="glitter butterfly" className="img-below-cards" />
 			</div>
 		</main>
 	);

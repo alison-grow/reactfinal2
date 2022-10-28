@@ -104,6 +104,14 @@ export default function Main({
 							</>
 						}
 					/>
+					<Route
+						path="/details"
+						element={
+							<>
+								<Header />
+							</>
+						}
+					/>
 				</Routes>
 			</HashRouter>
 		</>
