@@ -2,7 +2,7 @@
 	font-family: curly;
 	src: url('/src/font/JandaCurlygirlChunky.ttf');
 }
-.card {
+.details-card {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -22,10 +22,7 @@
 	text-align: center;
 	font-size: 18px;
 }
-/* .card-upper *:hover {
-	color: #DFABC5;
-} */
-.card-image {
+.details-card-img {
 	text-align: center;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
@@ -33,7 +30,7 @@
 	background-color: white;
 	border-radius: 15px;
 }
-.card-image img {
+.details-card-img img {
 	width: 7.8rem;
 	height: 6.9rem;
 }
@@ -51,7 +48,7 @@
 	margin-top: 1rem;
 }
 
-.card-add-to-cart-btn {
+.details-add-to-cart-btn {
 	flex: 1;
 	height: 50px;
 	background-color: #9C4D75;
@@ -60,11 +57,11 @@
 	margin-top: -5px;
 	font-family: 'bratz', cursive;
 }
-.card-add-to-cart-btn:hover {
+.details-add-to-cart-btn:hover {
 	background-color: white;
 	color: #9C4D75;
 }
-.card-toggle-wishlist-btn {
+.details-toggle-wishlist-btn {
 	padding: 0;
 	width: 2.2rem;
 	border-radius: 50%;
@@ -75,10 +72,10 @@
 	background-color: #9C4D75;
 	color: black;
 }
-.card-toggle-wishlist-btn:hover {
+.details-toggle-wishlist-btn:hover {
 	background-color: white;
 }
-.card-toggle-wishlist-btn icon {
+.details-toggle-wishlist-btn icon {
 	color: black;
 }
 

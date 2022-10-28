@@ -9,7 +9,7 @@ import Jewelry from "./Content Page/Jewelry"
 import Home from "./Content Page/Home";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import Header from "./Header";
-import Details from "./Content Page/Details";
+import Product from "./Content Page/Product";
 
 export default function Main({
 	addToCart,
@@ -106,11 +106,15 @@ export default function Main({
 						}
 					/>
 					<Route
-						path="/details"
+						path="/product"
 						element={
 							<>
 								<Header />
-								<Details
+								<Product
+									addToCart={addToCart}
+									toggleWishlist={toggleWishlist}
+									incrementQuantity={incrementQuantity}
+									decrementQuantity={decrementQuantity}
 								/>
 							</>
 						}

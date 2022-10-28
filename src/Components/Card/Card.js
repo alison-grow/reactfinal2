@@ -13,8 +13,8 @@ export default function Card({ item, addToCart, toggleWishlist }) {
 		<div className="card">
 			<div className="card-upper">
 				<div className="card-image">
-					<Link to={`/details/`}>
-						<img src={item.image} alt="product" />
+					<Link to={`/product/${item.id}`}>
+						<img src={item.image} alt="product-img" />
 					</Link>
 				</div>
 				<div>{item.title}</div>

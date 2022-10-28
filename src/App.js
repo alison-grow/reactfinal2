@@ -9,6 +9,7 @@ export default function App() {
 	const [womenItems, setWomenItems] = useState([]);
 	const [jewelryItems, setJewelryItems] = useState([]);
 	const [wishlist, setWishlist] = useState([]);
+	const [item, setItem] = useState([]);
 	const [cartItems, setCartItems] = useState([]);
 	const allItems = { menItems, womenItems, jewelryItems, wishlist, cartItems };
 	
@@ -16,8 +17,9 @@ export default function App() {
 		fetchMenItems();
 		fetchWomenItems();
 		fetchJewelryItems();
+		fetchProduct();
 	}, []);
-	// update wishlist
+
 	useEffect(() => {
 		const menWishlist = menItems.filter((item) => item.inWishlist);
 		const womenWishlist = womenItems.filter((item) => item.inWishlist);
@@ -117,7 +119,7 @@ export default function App() {
 		);
 		const formattedData = await data.json();
 		const updatedData = formattedData.map((item) => {
-			return { ...item };
+			return { ...item, inWishlist: false };
 		});
 		setJewelryItems(updatedData);
 	};
@@ -131,6 +133,17 @@ export default function App() {
 			return { ...item, inWishlist: false };
 		});
 		setWomenItems(updatedData);
+	};
+
+	const fetchProduct = async () => {
+		const data = await fetch(
+			"https://fakestoreapi.com/products/1"
+		);
+		const formattedData = await data.json();
+		const updatedData = formattedData.map((item) => {
+			return { ...item };
+		});
+		setItem(updatedData);
 	};
 
 	return (
@@ -147,4 +160,4 @@ export default function App() {
 			</div>
 		</allItemsContext.Provider>
 	);
-}
+};
