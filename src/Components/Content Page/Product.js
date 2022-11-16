@@ -3,10 +3,11 @@ import { allItemsContext } from "../../App";
 import DetailsCard from "../Card/DetailsCard";
 import { useParams } from "react-router-dom";
 
-export default function Product({ addToCart, toggleWishlist, incrementQuantity, decrementQuantity }) {
-    const id = useParams();
-
+export default function Product({ item, addToCart, toggleWishlist, incrementQuantity, decrementQuantity }) {
+    const id = item.info.id;
+    const { productId } = useParams();
     const setItem = useContext(allItemsContext).setItem;
+    if (!setItem) return;
     return (
         <main>
             <h2>

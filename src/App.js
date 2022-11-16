@@ -135,9 +135,9 @@ export default function App() {
 		setWomenItems(updatedData);
 	};
 
-	const fetchProduct = async () => {
+	const fetchProduct = async (id) => {
 		const data = await fetch(
-			"https://fakestoreapi.com/products/1"
+			`https://fakestoreapi.com/products/${id}`
 		);
 		const formattedData = await data.json();
 		const updatedData = formattedData.map((item) => {
