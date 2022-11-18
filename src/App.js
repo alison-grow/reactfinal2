@@ -9,7 +9,7 @@ export default function App() {
 	const [womenItems, setWomenItems] = useState([]);
 	const [jewelryItems, setJewelryItems] = useState([]);
 	const [wishlist, setWishlist] = useState([]);
-	const [item, setItem] = useState([]);
+	const [selectedItem, setSelectedItem] = useState([]);
 	const [cartItems, setCartItems] = useState([]);
 	const allItems = { menItems, womenItems, jewelryItems, wishlist, cartItems };
 	
@@ -17,7 +17,7 @@ export default function App() {
 		fetchMenItems();
 		fetchWomenItems();
 		fetchJewelryItems();
-		fetchProduct();
+		fetchSelectedProduct();
 	}, []);
 
 	useEffect(() => {
@@ -135,7 +135,7 @@ export default function App() {
 		setWomenItems(updatedData);
 	};
 
-	const fetchProduct = async (id) => {
+	const fetchSelectedProduct = async (id) => {
 		const data = await fetch(
 			`https://fakestoreapi.com/products/${id}`
 		);
@@ -143,7 +143,7 @@ export default function App() {
 		const updatedData = formattedData.map((item) => {
 			return { ...item };
 		});
-		setItem(updatedData);
+		setSelectedItem(updatedData);
 	};
 
 	return (

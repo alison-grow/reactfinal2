@@ -3,6 +3,7 @@ import { MdFavoriteBorder, MdFavorite } from "react-icons/md";
 import "./DetailsCard.css";
 
 export default function DetailsCard({ item, addToCart, toggleWishlist, incrementQuantity, decrementQuantity }) {
+	const id = item.info.id;
 	const total = (item.info.price * item.quantity).toFixed(2);
 	const icon = item.inWishlist ? (
 		<MdFavorite color="black" fontSize="1em" />
@@ -25,14 +26,14 @@ export default function DetailsCard({ item, addToCart, toggleWishlist, increment
 					{"Quantity: "}
 					<button
 						className="minus-btn"
-						onClick={() => decrementQuantity(item.id)}
+						onClick={() => decrementQuantity(id)}
 					>
 						-
 					</button>
 					{` ${item.quantity} `}
 					<button
 						className="plus-btn"
-						onClick={() => incrementQuantity(item.id)}
+						onClick={() => incrementQuantity(id)}
 					>
 						+
 					</button>
@@ -40,13 +41,13 @@ export default function DetailsCard({ item, addToCart, toggleWishlist, increment
 				<div>Total: ${total}</div>
 					<button
 						className="details-add-to-cart-btn"
-						onClick={() => addToCart(item.id, item.category)}
+						onClick={() => addToCart(id, item.category)}
 					>
 						Add to Cart
 					</button>
 					<button
 						className="details-toggle-wishlist-btn"
-						onClick={() => toggleWishlist(item.id, item.category)}
+						onClick={() => toggleWishlist(id, item.category)}
 					>
 						{icon}
 					</button>

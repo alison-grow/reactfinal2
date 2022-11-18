@@ -1,11 +1,7 @@
 import React from "react";
 import "./CartItems.css";
-export default function CartItems({
-	item,
-	incrementQuantity,
-	decrementQuantity,
-	removeFromCart,
-}) {
+
+export default function CartItems({ item, incrementQuantity, decrementQuantity, removeFromCart }) {
 	const id = item.info.id;
 	const total = (item.info.price * item.quantity).toFixed(2);
 	return (
