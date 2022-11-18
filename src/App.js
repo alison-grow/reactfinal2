@@ -11,13 +11,13 @@ export default function App() {
 	const [wishlist, setWishlist] = useState([]);
 	const [selectedItem, setSelectedItem] = useState([]);
 	const [cartItems, setCartItems] = useState([]);
-	const allItems = { menItems, womenItems, jewelryItems, wishlist, cartItems };
+	const allItems = { menItems, womenItems, jewelryItems, wishlist, cartItems, selectedItem };
 	
 	useEffect(() => {
 		fetchMenItems();
 		fetchWomenItems();
 		fetchJewelryItems();
-		fetchSelectedProduct();
+		fetchSelectedItem();
 	}, []);
 
 	useEffect(() => {
@@ -49,7 +49,7 @@ export default function App() {
 	};
 
 	const addToCart = (id) => {
-		const allItemsArray = menItems.concat(womenItems);
+		const allItemsArray = menItems.concat(womenItems, jewelryItems, selectedItem);
 		const targetItem = allItemsArray.filter((item) => item.id === id)[0];
 		const existingItem = cartItems.filter((item) => item.info.id === id);
 
@@ -135,13 +135,13 @@ export default function App() {
 		setWomenItems(updatedData);
 	};
 
-	const fetchSelectedProduct = async (id) => {
+	const fetchSelectedItem = async (id) => {
 		const data = await fetch(
 			`https://fakestoreapi.com/products/${id}`
 		);
 		const formattedData = await data.json();
 		const updatedData = formattedData.map((item) => {
-			return { ...item };
+			return { ...item, inWishlist: false };
 		});
 		setSelectedItem(updatedData);
 	};

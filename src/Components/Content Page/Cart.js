@@ -3,12 +3,7 @@ import { Link } from "react-router-dom";
 import { allItemsContext } from "../../App";
 import CartItems from "../Cart Items/CartItems";
 
-export default function Cart({
-	incrementQuantity,
-	decrementQuantity,
-	removeFromCart,
-	clearCart,
-}) {
+export default function Cart({ incrementQuantity, decrementQuantity, removeFromCart, clearCart }) {
 	const cartItems = useContext(allItemsContext).cartItems;
 
 	let cart;
@@ -41,14 +36,14 @@ export default function Cart({
 	return (
 		<main>
 			<h2>
-			<img src="https://dl.glitter-graphics.com/pub/3365/3365183h29y7c86k4.gif" alt="shopping cart gif" className="main-h2-gif" />
-				Shopping Cart
-			<img src="https://dl.glitter-graphics.com/pub/3365/3365183h29y7c86k4.gif" alt="shopping cart gif" className="main-h2-gif" />
+				<img src="https://dl.glitter-graphics.com/pub/3365/3365183h29y7c86k4.gif" alt="shopping cart gif" className="main-h2-gif" />
+					Shopping Cart
+				<img src="https://dl.glitter-graphics.com/pub/3365/3365183h29y7c86k4.gif" alt="shopping cart gif" className="main-h2-gif" />
 			</h2>
 			<img src="https://i3.glitter-graphics.org/pub/1154/1154233vwjnnz8zai.gif" alt="divider" />
 			{cart}
 			<div>
-			<img src="https://dl.glitter-graphics.com/pub/459/459678zahqqkeudq.gif" alt="glitter butterfly" className="img-below-cards" />
+				<img src="https://dl.glitter-graphics.com/pub/459/459678zahqqkeudq.gif" alt="glitter butterfly" className="img-below-cards" />
 			</div>
 		</main>
 	);
