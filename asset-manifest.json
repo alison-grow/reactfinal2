@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/reactfinal2/static/css/main.fed0fa1c.css",
-    "main.js": "/reactfinal2/static/js/main.1ce842de.js",
+    "main.js": "/reactfinal2/static/js/main.58d69e4c.js",
     "static/media/JandaCurlygirlChunky.ttf": "/reactfinal2/static/media/JandaCurlygirlChunky.109f24e61f8800a93415.ttf",
     "static/media/HouseOfFun-LVL4.ttf": "/reactfinal2/static/media/HouseOfFun-LVL4.3ff068f50f075887fd7d.ttf",
     "index.html": "/reactfinal2/index.html",
     "main.fed0fa1c.css.map": "/reactfinal2/static/css/main.fed0fa1c.css.map",
-    "main.1ce842de.js.map": "/reactfinal2/static/js/main.1ce842de.js.map"
+    "main.58d69e4c.js.map": "/reactfinal2/static/js/main.58d69e4c.js.map"
   },
   "entrypoints": [
     "static/css/main.fed0fa1c.css",
-    "static/js/main.1ce842de.js"
+    "static/js/main.58d69e4c.js"
   ]
 }
